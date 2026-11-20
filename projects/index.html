@@ -82,8 +82,8 @@
           <p class="eyebrow">Portfolio</p>
           <h1>Things I've built</h1>
           <p class="lede">
-            A mix of larger projects, tiny utilities, and experiments. These are
-            placeholders for now — swap them out for your own work when you're ready.
+            A mix of larger projects, tiny utilities, and experiments. I'll keep
+            adding to this as I build more.
           </p>
         </div>
       </section>
@@ -94,18 +94,26 @@
             <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
             <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Web</button>
             <button class="filter-btn" type="button" data-filter="cli" aria-pressed="false">CLI</button>
+            <button class="filter-btn" type="button" data-filter="python" aria-pressed="false">Python</button>
             <button class="filter-btn" type="button" data-filter="oss" aria-pressed="false">Open source</button>
             <button class="filter-btn" type="button" data-filter="experiment" aria-pressed="false">Experiments</button>
           </div>
 
           <div class="card-grid">
-            <article class="card project-card reveal" data-tags="web typescript">
-              <div class="project-thumb" aria-hidden="true">01</div>
-              <h3>Project one</h3>
-              <p>A short description of the problem, the approach, and what came out of it.</p>
-              <ul class="tag-list"><li>TypeScript</li><li>React</li></ul>
-              <!-- TODO: replace with the real repository URL -->
-              <a class="text-link" href="https://github.com/morten-frandsen" target="_blank" rel="noopener noreferrer">
+            <article class="card project-card reveal" data-tags="experiment python oss">
+              <img
+                class="project-image"
+                src="../assets/images/lunar-lander.gif"
+                alt="Gymnasium Lunar Lander environment: a spacecraft descending toward a landing pad"
+                loading="lazy"
+              />
+              <h3>Lunar Lander</h3>
+              <p>
+                A reinforcement learning experiment using Gymnasium's Lunar Lander
+                environment, PyTorch, and Deep Q-Learning. Work in progress.
+              </p>
+              <ul class="tag-list"><li>Python</li><li>PyTorch</li><li>Reinforcement learning</li></ul>
+              <a class="text-link" href="https://github.com/morten-frandsen/lunar-lander" target="_blank" rel="noopener noreferrer">
                 View code <span aria-hidden="true">↗</span>
               </a>
             </article>
@@ -132,19 +140,8 @@
               </a>
             </article>
 
-            <article class="card project-card reveal" data-tags="experiment javascript">
-              <div class="project-thumb" aria-hidden="true">04</div>
-              <h3>Small experiment</h3>
-              <p>A small idea I wanted to test. Sometimes the best projects are the ones with no plan.</p>
-              <ul class="tag-list"><li>JavaScript</li><li>Canvas</li></ul>
-              <!-- TODO: replace with the real repository URL -->
-              <a class="text-link" href="https://github.com/morten-frandsen" target="_blank" rel="noopener noreferrer">
-                View code <span aria-hidden="true">↗</span>
-              </a>
-            </article>
-
             <article class="card project-card reveal" data-tags="web python">
-              <div class="project-thumb project-thumb--alt" aria-hidden="true">05</div>
+              <div class="project-thumb project-thumb--alt" aria-hidden="true">04</div>
               <h3>Data dashboard</h3>
               <p>A short description of the problem, the approach, and what came out of it.</p>
               <ul class="tag-list"><li>Python</li><li>FastAPI</li></ul>
@@ -155,7 +152,7 @@
             </article>
 
             <article class="card project-card reveal" data-tags="oss cli rust">
-              <div class="project-thumb project-thumb--third" aria-hidden="true">06</div>
+              <div class="project-thumb project-thumb--third" aria-hidden="true">05</div>
               <h3>Terminal tool</h3>
               <p>A short description of the problem, the approach, and what came out of it.</p>
               <ul class="tag-list"><li>Rust</li><li>CLI</li></ul>

@@ -26,6 +26,7 @@ Note: Python's simple server doesn't automatically show `404.html` for unknown p
 ├── assets/
 │   ├── css/style.css       # All styles, including light/dark themes
 │   ├── js/main.js          # Theme toggle, filters, nav state, reveal animation
+│   ├── images/             # Project screenshots and other images
 │   └── favicon.svg
 ├── robots.txt
 ├── sitemap.xml
@@ -62,7 +63,7 @@ Posts are plain HTML files for now. If you later want to write in Markdown, the 
 Search the files for `TODO` to find placeholders. The main ones are:
 
 - Your real email address in `index.html`. GitHub, LinkedIn, and Salesforce Trailhead links are already in place in the hero and in the "Profiles & certifications" section.
-- Real repository or demo URLs on the project cards.
+- Real repository or demo URLs on the remaining placeholder project cards. Lunar Lander is already linked.
 - Individual Salesforce certification links, if you want specific credentials called out beyond the Trailhead profile.
 - The about text and skill list in `index.html`.
 - The starter posts in `posts/` — they are examples, not real writing.
@@ -86,3 +87,7 @@ GitHub Pages will publish the site at <https://morten-frandsen.github.io/>. Chan
 - Reduced-motion support, skip link, visible focus states, semantic headings, and
   a custom 404 page.
 - No runtime dependencies, no external fonts, and no CDN requests.
+
+## Credits
+
+- Lunar Lander screenshot: [Gymnasium documentation](https://gymnasium.farama.org/environments/box2d/lunar_lander/) (Farama Foundation). It is stored locally in `assets/images/lunar-lander.gif`.

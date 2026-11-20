@@ -599,6 +599,18 @@ ul {
   letter-spacing: -0.05em;
 }
 
+.project-image {
+  display: block;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 1.25rem;
+  padding: 0.35rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: #ffffff;
+  object-fit: contain;
+}
+
 .project-thumb--alt {
   background: linear-gradient(135deg, #ecfeff, var(--bg-subtle));
   color: #0e7490;
