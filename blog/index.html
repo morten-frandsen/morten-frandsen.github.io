@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog — Morten Frandsen</title>
+    <meta
+      name="description"
+      content="Notes on software engineering, tools, and things Morten Frandsen is learning."
+    />
+    <link rel="canonical" href="https://morten-frandsen.github.io/blog/" />
+    <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b1120" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script>
+      (function () {
+        document.documentElement.classList.add("js");
+        try {
+          var saved = localStorage.getItem("theme");
+          var preferred = window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+          document.documentElement.dataset.theme = saved || preferred;
+        } catch (error) {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
+    <script src="../assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../index.html" aria-label="Morten Frandsen, home">
+          MF<span class="brand-dot">.</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="../index.html">Home</a>
+          <a href="../projects/index.html">Projects</a>
+          <a href="index.html">Blog</a>
+          <a href="../index.html#contact">Contact</a>
+        </nav>
+
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          type="button"
+          aria-label="Switch to dark mode"
+          title="Toggle color theme"
+        >
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M20.4 14.5A8.5 8.5 0 1 1 9.5 3.6a7 7 0 0 0 10.9 10.9Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8" />
+            <path
+              d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-header">
+        <div class="container">
+          <p class="eyebrow">Writing</p>
+          <h1>Notes from the terminal</h1>
+          <p class="lede">
+            Occasional writing about building software, learning in public, and
+            the small details that make tools pleasant to use.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Blog posts">
+        <div class="container">
+          <div class="post-list">
+            <article class="post-row reveal">
+              <div>
+                <p class="post-meta"><time datetime="2026-11-20">20 Nov 2026</time> · 3 min read · Getting started</p>
+                <h3><a href="../posts/hello-world.html">Welcome to the blog</a></h3>
+                <p>Why I made this site, what I plan to write about, and how it's put together.</p>
+              </div>
+              <span class="post-row__arrow" aria-hidden="true">→</span>
+            </article>
+
+            <article class="post-row reveal">
+              <div>
+                <p class="post-meta"><time datetime="2026-11-15">15 Nov 2026</time> · 5 min read · Musings</p>
+                <h3><a href="../posts/building-in-public.html">Notes on building in public</a></h3>
+                <p>Small observations about sharing work early, learning out loud, and avoiding the pressure to be perfect.</p>
+              </div>
+              <span class="post-row__arrow" aria-hidden="true">→</span>
+            </article>
+
+            <article class="post-row reveal">
+              <div>
+                <p class="post-meta"><time datetime="2026-11-08">08 Nov 2026</time> · 4 min read · Tools</p>
+                <h3><a href="../posts/small-tools.html">Why small tools win</a></h3>
+                <p>A case for boring, focused utilities that do one thing well and get out of your way.</p>
+              </div>
+              <span class="post-row__arrow" aria-hidden="true">→</span>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span class="year">2026</span> Morten Frandsen. Built with HTML, CSS and a little JavaScript.</p>
+        <nav aria-label="Footer navigation">
+          <a href="../index.html">Home</a>
+          <a href="../projects/index.html">Projects</a>
+          <a href="index.html">Blog</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

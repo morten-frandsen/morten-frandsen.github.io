@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects — Morten Frandsen</title>
+    <meta
+      name="description"
+      content="A selection of projects and experiments by Morten Frandsen."
+    />
+    <link rel="canonical" href="https://morten-frandsen.github.io/projects/" />
+    <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b1120" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script>
+      (function () {
+        document.documentElement.classList.add("js");
+        try {
+          var saved = localStorage.getItem("theme");
+          var preferred = window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+          document.documentElement.dataset.theme = saved || preferred;
+        } catch (error) {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
+    <script src="../assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../index.html" aria-label="Morten Frandsen, home">
+          MF<span class="brand-dot">.</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="../index.html">Home</a>
+          <a href="index.html">Projects</a>
+          <a href="../blog/index.html">Blog</a>
+          <a href="../index.html#contact">Contact</a>
+        </nav>
+
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          type="button"
+          aria-label="Switch to dark mode"
+          title="Toggle color theme"
+        >
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M20.4 14.5A8.5 8.5 0 1 1 9.5 3.6a7 7 0 0 0 10.9 10.9Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8" />
+            <path
+              d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-header">
+        <div class="container">
+          <p class="eyebrow">Portfolio</p>
+          <h1>Things I've built</h1>
+          <p class="lede">
+            A mix of larger projects, tiny utilities, and experiments. These are
+            placeholders for now — swap them out for your own work when you're ready.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Project list">
+        <div class="container">
+          <div class="filter-bar" role="group" aria-label="Filter projects">
+            <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Web</button>
+            <button class="filter-btn" type="button" data-filter="cli" aria-pressed="false">CLI</button>
+            <button class="filter-btn" type="button" data-filter="oss" aria-pressed="false">Open source</button>
+            <button class="filter-btn" type="button" data-filter="experiment" aria-pressed="false">Experiments</button>
+          </div>
+
+          <div class="card-grid">
+            <article class="card project-card reveal" data-tags="web typescript">
+              <div class="project-thumb" aria-hidden="true">01</div>
+              <h3>Project one</h3>
+              <p>A short description of the problem, the approach, and what came out of it.</p>
+              <ul class="tag-list"><li>TypeScript</li><li>React</li></ul>
+              <!-- TODO: replace with the real repository URL -->
+              <a class="text-link" href="https://github.com/morten-frandsen" target="_blank" rel="noopener noreferrer">
+                View code <span aria-hidden="true">↗</span>
+              </a>
+            </article>
+
+            <article class="card project-card reveal" data-tags="cli python">
+              <div class="project-thumb project-thumb--alt" aria-hidden="true">02</div>
+              <h3>Project two</h3>
+              <p>A short description of the problem, the approach, and what came out of it.</p>
+              <ul class="tag-list"><li>Python</li><li>CLI</li></ul>
+              <!-- TODO: replace with the real repository URL -->
+              <a class="text-link" href="https://github.com/morten-frandsen" target="_blank" rel="noopener noreferrer">
+                View code <span aria-hidden="true">↗</span>
+              </a>
+            </article>
+
+            <article class="card project-card reveal" data-tags="oss go">
+              <div class="project-thumb project-thumb--third" aria-hidden="true">03</div>
+              <h3>Project three</h3>
+              <p>A short description of the problem, the approach, and what came out of it.</p>
+              <ul class="tag-list"><li>Go</li><li>Open source</li></ul>
+              <!-- TODO: replace with the real repository URL -->
+              <a class="text-link" href="https://github.com/morten-frandsen" target="_blank" rel="noopener noreferrer">
+                View code <span aria-hidden="true">↗</span>
+              </a>
+            </article>
+
+            <article class="card project-card reveal" data-tags="experiment javascript">
+              <div class="project-thumb" aria-hidden="true">04</div>
+              <h3>Small experiment</h3>
+              <p>A small idea I wanted to test. Sometimes the best projects are the ones with no plan.</p>
+              <ul class="tag-list"><li>JavaScript</li><li>Canvas</li></ul>
+              <!-- TODO: replace with the real repository URL -->
+              <a class="text-link" href="https://github.com/morten-frandsen" target="_blank" rel="noopener noreferrer">
+                View code <span aria-hidden="true">↗</span>
+              </a>
+            </article>
+
+            <article class="card project-card reveal" data-tags="web python">
+              <div class="project-thumb project-thumb--alt" aria-hidden="true">05</div>
+              <h3>Data dashboard</h3>
+              <p>A short description of the problem, the approach, and what came out of it.</p>
+              <ul class="tag-list"><li>Python</li><li>FastAPI</li></ul>
+              <!-- TODO: replace with the real repository URL -->
+              <a class="text-link" href="https://github.com/morten-frandsen" target="_blank" rel="noopener noreferrer">
+                View code <span aria-hidden="true">↗</span>
+              </a>
+            </article>
+
+            <article class="card project-card reveal" data-tags="oss cli rust">
+              <div class="project-thumb project-thumb--third" aria-hidden="true">06</div>
+              <h3>Terminal tool</h3>
+              <p>A short description of the problem, the approach, and what came out of it.</p>
+              <ul class="tag-list"><li>Rust</li><li>CLI</li></ul>
+              <!-- TODO: replace with the real repository URL -->
+              <a class="text-link" href="https://github.com/morten-frandsen" target="_blank" rel="noopener noreferrer">
+                View code <span aria-hidden="true">↗</span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span class="year">2026</span> Morten Frandsen. Built with HTML, CSS and a little JavaScript.</p>
+        <nav aria-label="Footer navigation">
+          <a href="../index.html">Home</a>
+          <a href="index.html">Projects</a>
+          <a href="../blog/index.html">Blog</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

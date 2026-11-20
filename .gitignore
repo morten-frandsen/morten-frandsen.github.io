@@ -1,0 +1,14 @@
+# OS / editor files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# Local Jekyll/Static site artifacts, if you add tooling later
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+node_modules/

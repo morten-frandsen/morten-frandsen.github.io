@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Notes on building in public — Morten Frandsen</title>
+    <meta
+      name="description"
+      content="Small observations about sharing work early, learning out loud, and avoiding the pressure to be perfect."
+    />
+    <link rel="canonical" href="https://morten-frandsen.github.io/posts/building-in-public.html" />
+    <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b1120" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script>
+      (function () {
+        document.documentElement.classList.add("js");
+        try {
+          var saved = localStorage.getItem("theme");
+          var preferred = window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+          document.documentElement.dataset.theme = saved || preferred;
+        } catch (error) {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
+    <script src="../assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../index.html" aria-label="Morten Frandsen, home">
+          MF<span class="brand-dot">.</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="../index.html">Home</a>
+          <a href="../projects/index.html">Projects</a>
+          <a href="../blog/index.html">Blog</a>
+          <a href="../index.html#contact">Contact</a>
+        </nav>
+
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          type="button"
+          aria-label="Switch to dark mode"
+          title="Toggle color theme"
+        >
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M20.4 14.5A8.5 8.5 0 1 1 9.5 3.6a7 7 0 0 0 10.9 10.9Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8" />
+            <path
+              d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <article class="article">
+        <div class="article-layout">
+          <a class="back-link" href="../blog/index.html">← All posts</a>
+
+          <header class="article-header">
+            <p class="eyebrow">Musings</p>
+            <h1>Notes on building in public</h1>
+            <p class="post-meta"><time datetime="2026-11-15">15 November 2026</time> · 5 min read</p>
+            <ul class="tag-list">
+              <li>learning</li>
+              <li>process</li>
+            </ul>
+          </header>
+
+          <div class="prose">
+            <p>
+              Sharing unfinished work feels strange at first. The instinct is to
+              wait until everything is polished, tested, and impossible to
+              criticise. But waiting has a cost: you lose the conversations that
+              would have made the work better in the first place.
+            </p>
+
+            <h2>Early is useful</h2>
+            <p>
+              When you share something early, you get feedback while it's still
+              cheap to act on. A question about a confusing label is easy to fix
+              when the label is still a variable name. Six months later, it's a
+              migration.
+            </p>
+            <p>
+              Early posts also give you a trail of decisions. Six months from now,
+              you may not remember why you chose a particular approach. A short
+              note from the day you made the choice is surprisingly valuable.
+            </p>
+
+            <h2>You don't have to perform</h2>
+            <p>
+              "Building in public" has become associated with metrics, threads,
+              and a kind of relentless optimism that doesn't match most people's
+              actual experience. It doesn't have to be that way. It can simply
+              mean writing down what you did and what you learned.
+            </p>
+            <blockquote>
+              A bad week is still information. So is a refactor that didn't help,
+              or an idea you abandoned after two hours.
+            </blockquote>
+
+            <h2>A lightweight habit</h2>
+            <p>Here's the version I'm trying to keep sustainable:</p>
+            <ol>
+              <li>Write one paragraph about what changed this week.</li>
+              <li>Add one sentence about what surprised you.</li>
+              <li>Publish it, even if it's short.</li>
+            </ol>
+            <p>
+              That's it. No chart, no grand conclusion, no promise to post every
+              day. The goal is not to build an audience — it's to build a habit of
+              noticing.
+            </p>
+
+            <h2>The side effect</h2>
+            <p>
+              The unexpected benefit is that writing about a problem often helps
+              solve it. Explaining something forces you to make the details
+              explicit, and the gaps become obvious. More than once I've found
+              the fix halfway through a paragraph.
+            </p>
+            <p>
+              So this blog is partly an archive and partly a thinking tool. If
+              you're reading this and recognising a problem I've described, get
+              in touch. That's the whole point of putting it out here.
+            </p>
+          </div>
+
+          <footer class="article-footer">
+            <a class="text-link" href="../blog/index.html">Back to all posts <span aria-hidden="true">→</span></a>
+          </footer>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span class="year">2026</span> Morten Frandsen. Built with HTML, CSS and a little JavaScript.</p>
+        <nav aria-label="Footer navigation">
+          <a href="../index.html">Home</a>
+          <a href="../projects/index.html">Projects</a>
+          <a href="../blog/index.html">Blog</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
