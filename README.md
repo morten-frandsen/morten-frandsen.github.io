@@ -90,4 +90,4 @@ GitHub Pages will publish the site at <https://morten-frandsen.github.io/>. Chan
 
 ## Credits
 
-- Lunar Lander screenshot: [Gymnasium documentation](https://gymnasium.farama.org/environments/box2d/lunar_lander/) (Farama Foundation). It is stored locally in `assets/images/lunar-lander.gif`.
+- Gymnasium screenshots (Lunar Lander and CartPole): [Gymnasium documentation](https://gymnasium.farama.org/) (Farama Foundation). They are stored locally in `assets/images/`.
