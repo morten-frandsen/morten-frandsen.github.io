@@ -63,7 +63,6 @@ Posts are plain HTML files for now. If you later want to write in Markdown, the 
 Search the files for `TODO` to find placeholders. The main ones are:
 
 - Your real email address in `index.html`. GitHub, LinkedIn, and Salesforce Trailhead links are already in place in the hero and in the "Profiles & certifications" section.
-- Real repository or demo URLs on the remaining placeholder project cards. Lunar Lander is already linked.
 - Individual Salesforce certification links, if you want specific credentials called out beyond the Trailhead profile.
 - The about text and skill list in `index.html`.
 - The starter posts in `posts/` — they are examples, not real writing.
@@ -90,4 +89,7 @@ GitHub Pages will publish the site at <https://morten-frandsen.github.io/>. Chan
 
 ## Credits
 
-- Gymnasium screenshots (Lunar Lander and CartPole): [Gymnasium documentation](https://gymnasium.farama.org/) (Farama Foundation). They are stored locally in `assets/images/`.
+- Gymnasium screenshots (Lunar Lander and CartPole): [Gymnasium documentation](https://gymnasium.farama.org/) (Farama Foundation).
+- ViZDoom screenshot: [ViZDoom documentation](https://vizdoom.farama.org/) (Farama Foundation).
+
+All screenshots are stored locally in `assets/images/`.

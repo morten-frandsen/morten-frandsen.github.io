@@ -82,7 +82,7 @@
           <p class="eyebrow">Portfolio</p>
           <h1>Things I've built</h1>
           <p class="lede">
-            A mix of larger projects, tiny utilities, and experiments. I'll keep
+            A collection of reinforcement learning experiments and tools. I'll keep
             adding to this as I build more.
           </p>
         </div>
@@ -92,8 +92,6 @@
         <div class="container">
           <div class="filter-bar" role="group" aria-label="Filter projects">
             <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
-            <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Web</button>
-            <button class="filter-btn" type="button" data-filter="cli" aria-pressed="false">CLI</button>
             <button class="filter-btn" type="button" data-filter="python" aria-pressed="false">Python</button>
             <button class="filter-btn" type="button" data-filter="oss" aria-pressed="false">Open source</button>
             <button class="filter-btn" type="button" data-filter="experiment" aria-pressed="false">Experiments</button>
@@ -137,35 +135,21 @@
               </a>
             </article>
 
-            <article class="card project-card reveal" data-tags="oss go">
-              <div class="project-thumb project-thumb--third" aria-hidden="true">01</div>
-              <h3>Project one</h3>
-              <p>A short description of the problem, the approach, and what came out of it.</p>
-              <ul class="tag-list"><li>Go</li><li>Open source</li></ul>
-              <!-- TODO: replace with the real repository URL -->
-              <a class="text-link" href="https://github.com/morten-frandsen" target="_blank" rel="noopener noreferrer">
-                View code <span aria-hidden="true">↗</span>
-              </a>
-            </article>
-
-            <article class="card project-card reveal" data-tags="web python">
-              <div class="project-thumb project-thumb--alt" aria-hidden="true">02</div>
-              <h3>Data dashboard</h3>
-              <p>A short description of the problem, the approach, and what came out of it.</p>
-              <ul class="tag-list"><li>Python</li><li>FastAPI</li></ul>
-              <!-- TODO: replace with the real repository URL -->
-              <a class="text-link" href="https://github.com/morten-frandsen" target="_blank" rel="noopener noreferrer">
-                View code <span aria-hidden="true">↗</span>
-              </a>
-            </article>
-
-            <article class="card project-card reveal" data-tags="oss cli rust">
-              <div class="project-thumb project-thumb--third" aria-hidden="true">03</div>
-              <h3>Terminal tool</h3>
-              <p>A short description of the problem, the approach, and what came out of it.</p>
-              <ul class="tag-list"><li>Rust</li><li>CLI</li></ul>
-              <!-- TODO: replace with the real repository URL -->
-              <a class="text-link" href="https://github.com/morten-frandsen" target="_blank" rel="noopener noreferrer">
+            <article class="card project-card reveal" data-tags="experiment python oss">
+              <img
+                class="project-image"
+                src="../assets/images/vizdoom-basic.png"
+                alt="ViZDoom basic scenario: a first-person view from the game Doom"
+                loading="lazy"
+              />
+              <h3>PPO Doom Agent</h3>
+              <p>
+                A PPO agent implemented from scratch in PyTorch that learns to play
+                Doom from pixels through ViZDoom, with GAE, checkpointing,
+                evaluation, and a desktop GUI.
+              </p>
+              <ul class="tag-list"><li>Python</li><li>PyTorch</li><li>ViZDoom</li><li>PPO</li></ul>
+              <a class="text-link" href="https://github.com/morten-frandsen/Proximal-Policy-Optimization-PPO" target="_blank" rel="noopener noreferrer">
                 View code <span aria-hidden="true">↗</span>
               </a>
             </article>
