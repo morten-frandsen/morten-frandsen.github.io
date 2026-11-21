@@ -90,6 +90,6 @@ GitHub Pages will publish the site at <https://morten-frandsen.github.io/>. Chan
 ## Credits
 
 - Gymnasium screenshots (Lunar Lander and CartPole): [Gymnasium documentation](https://gymnasium.farama.org/) (Farama Foundation).
-- ViZDoom screenshot: [ViZDoom documentation](https://vizdoom.farama.org/) (Farama Foundation).
+- ViZDoom animation: [ViZDoom documentation](https://vizdoom.farama.org/) (Farama Foundation).
 
-All screenshots are stored locally in `assets/images/`.
+All screenshots and animations are stored locally in `assets/images/`.
